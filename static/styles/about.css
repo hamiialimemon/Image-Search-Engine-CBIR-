@@ -1,0 +1,146 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.about{
+    background: linear-gradient(#11cee79a,#001c9973),url('./img/search-page.png');
+}
+.lg-heading{
+    font-size: 3.5rem;
+}
+.md-heading{
+    font-size: 2.2rem;
+}
+.bg-dark{
+    background-color: #263238;
+}
+.text-light{
+    color: #f4f4f4;
+}
+.text-black{
+    color: #333;
+}
+.text-grey{
+    color: #555;
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+    transition: all 0.3s ease-in-out;
+}
+.btn-primary{
+    /* background-color: #fff; */
+    border: 2px solid white;
+    border-radius: 12em;
+    margin-top: 2rem;
+
+}
+.btn-secondary{
+    border: 2px solid red;
+    border-radius: 1.5em;
+    background-color: #edeae1;
+}
+.btn-secondary:hover{
+    background-color:#c2c0ba;
+}
+.btn-primary:hover{
+    background: none;
+    color: white;
+}
+.navbar{
+    padding: 1rem;
+    /* margin-bottom: 1rem; */
+    background-color: #333;
+    /* margin-bottom: 20px; */
+}
+.navbar a{
+    color: #f4f4f4;
+}
+.navbar a:hover{
+    border-bottom: 1px solid #f4f4f4;
+}
+.navbar .logo{
+    float: left;
+    width: 120px;
+	height: 70px;
+    font-weight: 700;
+    /* padding-bottom: 4rem; */
+}
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    /* font-size: 3rem; */
+    text-transform: uppercase;
+}
+.navbar a{
+    padding-bottom: 1rem;
+}
+.navbar .nav-items{
+    float: right;
+	
+}
+.navbar .nav-item {
+	padding-top: 20px;
+}
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.02em;
+    /* font-weight: 500; */
+}
+h5{
+    font-size: 2rem;
+}
+
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+  }
+  
+  .social-link:hover,
+  .social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+  }
+  .footer{
+    background-color: #263238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+.display-4{
+    font-size: 5rem;
+}
+.quote{
+    font-size: 1.5rem;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="https://kit.fontawesome.com/a41d4f7d83.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        <title>CBIR | Contact</title>
+    </head>
+<body>
+    <nav class="navbar bg-dark">
+        <div class="container">
+            <img class="logo" src="{{url_for('static', filename='styles/img/logo.png')}}">
+        <ul class="nav-items">
+           <li class="nav-item"><a href="{{url_for('index') }}">Home</a></li>
+           <li class="nav-item"><a href="{{url_for('about') }}">About</a></li>
+           <li class="nav-item"><a href="{{url_for('contact')}}">Contact</a></li>
+        </ul>
+        </div>
+        
+    </nav>
+    <section class="contact-form">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="company-address">
+                    <div class="address-group">
+                        <i class="fas fa-map-marker-alt fa-3x text-red"></i>
+                        <h2 class="text-grey md-heading">Location</h2>
+                        <p>Software Engineering Department Mehran UET Jamshoro</p>
+                    </div>
+                    <div class="address-group">
+                        <i class="far fa-envelope fa-3x text-red"></i>
+                        <h2 class="text-grey md-heading">E-mail</h2>
+                        <p>18SW85@students.muet.edu.pk</p>
+                        <p>18SW48@students.muet.edu.pk</p>
+                        <p>18SW04@students.muet.edu.pk</p>
+                    </div>
+                    <div class="address-group">
+                        <i class="fas fa-phone-square-alt fa-3x text-red"></i>
+                        <h2 class="text-grey md-heading">Call</h2>
+                        <p>+(92)334 3027993</p>
+                    </div>
+                    <img src="../static/styles/img/swe.jpg" alt="dept">
+                </div>
+                <div class="form">
+                    <h1 class="lg-heading text-black">Contact Us</h1>
+                    <p class="text-grey">Let us know if you have any query, suggestion and concerns by filling contact form below: </p>
+                    <form action="/contact" method = "post">
+                        <div class="form-group">
+                            <label for="name">Full Name </label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone </label>
+                            <input type="text" name="phone" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail </label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="msg">Message </label>
+                            <textarea name="message" id="msg" cols="30" rows="10" required></textarea>
+                        </div>
+                        <input type="submit" value="Submit" class="form-btn">
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <footer class="footer">
+        <p>CBIR &copy; 2022, All Rights Reserved</p>
+    </footer>
+</body>
+</html>

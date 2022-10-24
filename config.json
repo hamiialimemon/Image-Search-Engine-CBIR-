@@ -1,0 +1,10 @@
+{
+    "params":
+    {
+        "local_server":"True",
+        "local_uri":"mysql://root:@localhost/fyp",
+        "prod_uri":"mysql://root:@localhost/fyp",
+        "gmail-username":"",
+        "gmail-password":""
+    }
+}

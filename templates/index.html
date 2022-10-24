@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+    <link rel="stylesheet" href="./styles.css">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <!-- <h1 class="logo lg-heading text-light">Logo.co</h1> -->
+				<img class="logo" src="{{url_for('static', filename='styles/img/logo.png')}}">
+            <ul class="nav-items">
+               <li class="nav-item"><a href="{{url_for('index') }}">Home</a></li>
+               <li class="nav-item"><a href="{{url_for('about') }}">About</a></li>
+               <li class="nav-item"><a href="{{url_for('contact') }}">Contact</a></li>
+            </ul>
+            </div>
+        </nav>
+    
+
+        <div class="header-content">
+            <h1 class="lg-heading text-light">IMGFINDER</h1>
+            <p class="text-light">DON'T KNOW WHAT IT IS CALLED? THEN JUST UPLOAD YOUR DESIRED IMAGE AND GET YOUR RESULTS HERE!</p>
+            <div class="col-md-6">
+                <form method="post" action="/results" id="#" enctype="multipart/form-data">
+                    <div class="form-group files color">
+                      <input type="file" class="form-control" name="query_img" multiple="" accept="image/jpg,image/jpeg">
+                    </div>
+                    <input type="submit" value="Proceed" class="btn btn-primary  md-heading">
+                </form>  
+            </div>
+        </div>
+        
+    </header>
+    <footer class="footer">
+        <p>IMGFINDER &copy; 2022, All Rights Reserved</p>
+    </footer>
+</body>
+</html>
